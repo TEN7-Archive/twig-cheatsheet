@@ -1,2 +1,2 @@
-# twig-cheatsheet
+# Twig Cheatsheet
 Helpful Twig snippets
