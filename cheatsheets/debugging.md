@@ -1,7 +1,7 @@
 [< Menu](../README.md)
 
 # Debugging
-How to dump and debug variable output in Twig.
+## How to dump and debug variable output in Twig.
 
 Install [Twig Tweak](https://www.drupal.org/project/twig_tweak) module and then dump variables with:
 
