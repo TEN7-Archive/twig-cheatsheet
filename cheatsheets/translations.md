@@ -1,3 +1,5 @@
+[< Menu](../twig-cheatsheet.md)
+
 # Translations
 ## Translate with token replacement variables
 Strings that include variables can be translated using tokens. This is often a special case where simply using {%trans}...{%endtrans} doesn't work. Like when needing to set a variable.
