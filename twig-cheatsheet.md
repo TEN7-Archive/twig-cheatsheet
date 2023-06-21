@@ -45,7 +45,7 @@ If you remember that everything is a render array, then we just need to create a
 Example from a node template, but can be used anywhere as long as you have the URI of a Drupal managed image:
 
 
-```json
+```twig
 
 {%  
  set styled_image = {  
@@ -60,7 +60,7 @@ Example from a node template, but can be used anywhere as long as you have the U
 
 
 #### Using a Responsive Image Style
- ```json
+ ```twig
 
 {%  
  set styled_image = {  
@@ -83,7 +83,7 @@ Strings that include variables can be translated using tokens. This is often a s
 
 ### Translations that include variables
 In most cases just use `{%trans}...{%endtrans}` and the string with variable will be available for string translation.
-```json
+```twig
 {%trans} 
 	Hear from {{ quotee_name }} at {{ quotee_organization }}
 {%endtrans}
@@ -94,7 +94,7 @@ In most cases just use `{%trans}...{%endtrans}` and the string with variable wil
 ## Links
 ### Get the Url from a link field
 This gets the FIRST links url, often link fields are multiple, or need to be accessed by their index
-```json
+```twig
 {{ content.field_link_multiple.0['#url'] }}
 ```
 
@@ -106,17 +106,17 @@ This gets the FIRST links url, often link fields are multiple, or need to be acc
 Use case: you need to iterate through nested paragraph items
 
 If **twig_tweak** module is installed:
-```json
+```twig
 {% set renderable_buttons = content.field_buttons|children %}
 ```
 
 Other options with 'vanilla' Twig features
-```json
+```twig
 {% for key,item in content.field_buttons if key|first != '#' %}
 ```
 
 This may be better in some scenarios
-```json
+```twig
       {% set renderable_slides = [] %}
 
       {% for item in carousel_swiper.content|keys %}
@@ -128,7 +128,7 @@ This may be better in some scenarios
 
 In the example where each item in `renderable_slides` is a paragraph entity, you can use the following to access the paragraph entity field values
 
-```json
+```twig
 {% for item in renderable_slides %}#}
   {{ item['#paragraph'].field_text.value }}
 {% endfor %}
