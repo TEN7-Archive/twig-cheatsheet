@@ -1,4 +1,4 @@
-[< Menu](../README.MD)
+[< Menu](../README.md)
 
 # Links
 ## Get the URL from a link field

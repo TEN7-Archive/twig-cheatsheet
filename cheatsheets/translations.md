@@ -1,4 +1,4 @@
-[< Menu](../README.MD)
+[< Menu](../README.md)
 
 # Translations
 ## Translate with token replacement variables
